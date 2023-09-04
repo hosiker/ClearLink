@@ -11,7 +11,7 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:titleTextColor="@color/black"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/main_activity">
 
     <TextView
         android:id="@+id/title"
