@@ -14,6 +14,11 @@ class MainActivity : AppCompatActivity() {
         ViewPagerAdapter(this)
     }
 
+    private val tabIcon = arrayListOf(
+        R.drawable.ic_contact_list,
+        R.drawable.ic_mypage
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -23,9 +28,13 @@ class MainActivity : AppCompatActivity() {
         // Viewpager 어댑터 설정
         binding.viewPager2.adapter = viewPagerAdapter
 
+
+
         // 탭레이아웃, 뷰페이저 합치기
         TabLayoutMediator(binding.tabLayout, binding.viewPager2) { tab, position ->
             tab.setText(viewPagerAdapter.getTitle(position))
+            tab.setIcon(tabIcon[position])
         }.attach()
+
     }
 }

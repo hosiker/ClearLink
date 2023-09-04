@@ -14,10 +14,10 @@ class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapte
     init {
         // 뷰페이저에 넣을 프래그먼트
         fragments.add(
-            Tabs(ContactListFragment(), "Contact")
+            Tabs(ContactListFragment(), "연락처")
         )
         fragments.add(
-            Tabs(MyPageFragment(), "MyPage")
+            Tabs(MyPageFragment(), "마이 페이지")
         )
     }
     override fun getItemCount(): Int {
