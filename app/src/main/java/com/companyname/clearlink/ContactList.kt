@@ -6,6 +6,6 @@ import android.os.Bundle
 class ContactList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.contactlist_activity)
+        setContentView(R.layout.mypage_activity)
     }
 }
