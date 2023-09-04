@@ -3,12 +3,12 @@ package com.companyname.clearlink
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.companyname.clearlink.adapter.ViewPagerAdapter
-import com.companyname.clearlink.databinding.ActivityMainBinding
+import com.companyname.clearlink.databinding.MainActivityBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: MainActivityBinding
 
     private val viewPagerAdapter by lazy {
         ViewPagerAdapter(this)
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
